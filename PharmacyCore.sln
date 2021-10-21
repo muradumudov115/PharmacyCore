@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy", "Pharmacy\Pharmacy.csproj", "{C2C0525F-59A7-4351-AEC4-44045EBE288F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{F729535A-1422-451C-B163-88534D816B66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{EE7536AA-EA6C-4A9C-A53C-C13837D93B37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2C0525F-59A7-4351-AEC4-44045EBE288F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C0525F-59A7-4351-AEC4-44045EBE288F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C0525F-59A7-4351-AEC4-44045EBE288F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C0525F-59A7-4351-AEC4-44045EBE288F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F729535A-1422-451C-B163-88534D816B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F729535A-1422-451C-B163-88534D816B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F729535A-1422-451C-B163-88534D816B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F729535A-1422-451C-B163-88534D816B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE7536AA-EA6C-4A9C-A53C-C13837D93B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE7536AA-EA6C-4A9C-A53C-C13837D93B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE7536AA-EA6C-4A9C-A53C-C13837D93B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE7536AA-EA6C-4A9C-A53C-C13837D93B37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {635486F0-E38C-4D2C-9F3C-624EB892EF76}
+	EndGlobalSection
+EndGlobal
