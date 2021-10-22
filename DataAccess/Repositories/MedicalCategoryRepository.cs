@@ -71,7 +71,7 @@ namespace DataAccess.Repositories
             try
             {
                 MedicalCategory dbMedicalCategory = Get(s => s.Id == entity.Id);
-                dbMedicalCategory.Name = entity.Name;
+                dbMedicalCategory = entity;
                 return true;
             }
             catch (Exception)

@@ -6,7 +6,7 @@ namespace Pharmacy
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("hello khanish");
         }
     }
 }

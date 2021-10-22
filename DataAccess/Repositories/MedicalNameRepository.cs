@@ -73,7 +73,7 @@ namespace DataAccess.Repositories
             try
             {
                 MedicalName dbMedicalName = Get(s => s.Id == entity.Id);
-                dbMedicalName.Name = entity.Name;
+               dbMedicalName=entity;
                 return true;
             }
             catch (Exception)
