@@ -5,7 +5,8 @@ using System.Text;
 
 namespace DataAccess.Interface
 {
-     public   interface IRepository<T> where T:IEntity
+     public   interface IRepository<T> 
+        where T:IEntity
      {
         bool Create(T entity); 
         bool Update(T entity); 
