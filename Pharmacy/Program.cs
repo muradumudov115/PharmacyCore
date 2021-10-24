@@ -25,6 +25,7 @@ namespace Pharmacy
                             drugstoreController.Create();
                             break;
                         case (int)Helper.Menu.UpdateDrugStore:
+                            drugstoreController.Update();
                             break;
                         case (int)Helper.Menu.DeleteDrugStore:
                             drugstoreController.Delete();

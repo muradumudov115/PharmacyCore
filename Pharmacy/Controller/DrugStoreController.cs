@@ -53,8 +53,53 @@ namespace Pharmacy
             
 
         }
-        
-    }
+        public void Update()
+        {
+            GetAll();
+            Helper.ChangeTextColor(ConsoleColor.DarkYellow, "Enter drugstore Id Which Do you want to Update ");
+            string input = Console.ReadLine();
+            Helper.ChangeTextColor(ConsoleColor.DarkYellow, "Add A New DrugStore Name ");
+            string input1 = Console.ReadLine();
+            int Id;
+            bool isTrueDrug = int.TryParse(input, out Id);
+            
+           if (isTrueDrug)
+            {
+                DrugStore  drugstore  = new DrugStore { Name=str1};
+                if (drugstoreServic.Update(Id,drugstore )!=null)
+                {
+                    Helper.ChangeTextColor(ConsoleColor.Cyan, "Name is Changed");
+                    return;
+
+                }
+                else
+                {
+                    Helper.ChangeTextColor(ConsoleColor.Red, "Please Enter Correct Format");
+                }
+
+            }
+            else
+            {
+                Helper.ChangeTextColor(ConsoleColor.Red, "Please select corect format");
+            } drugstore = new DrugStore { Name = str1 };
+                if (pharmacyServic.Update(Id, drugstore) != null)
+                {
+                    Helper.ChangeTextColor(ConsoleColor.Cyan, "Name is Changed");
+                    return;
+
+                }
+                else
+                {
+                    Helper.ChangeTextColor(ConsoleColor.Red, "Please Enter Correct Format");
+                }
+
+            }
+            else
+            {
+                Helper.ChangeTextColor(ConsoleColor.Red, "Please select corect format");
+            }
+
+        }
     
 
        

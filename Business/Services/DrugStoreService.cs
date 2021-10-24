@@ -40,9 +40,26 @@ namespace Business.Services
             
         }
 
-      public DrugStore Update(int Id, Drug drug)
+        public DrugStore  Update(int Id, DrugStore drugstore)
         {
-            throw new NotImplementedException();
+            try
+            {
+                DrugStore dbDrugStore = drugstoreRepository.Get(s => s.Id == drugstore.Id);
+                if (dbDrugStore != null)
+                {
+                    drugstoreRepository.Update(dbDrugStore, drugstore);
+                    return dbDrugStore;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
         }
 
         public DrugStore Delete(int Id)

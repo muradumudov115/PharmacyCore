@@ -49,6 +49,23 @@ namespace DataAccess.Repositories
             throw new NotImplementedException();
         }
 
+        public bool Update(DrugStore  entity, DrugStore druNew)
+        {
+            try
+            {
+                DrugStore dbDrugStore = Get(m => m.Id == entity.Id);
+                dbDrugStore.Name = druNew.Name;
+
+                return true;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public bool Update(DrugStore entity)
         {
             throw new NotImplementedException();
