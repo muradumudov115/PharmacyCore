@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy", "Pharmacy\Pharmacy.csproj", "{C2C0525F-59A7-4351-AEC4-44045EBE288F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrugStoreApp", "Pharmacy\DrugStoreApp.csproj", "{C2C0525F-59A7-4351-AEC4-44045EBE288F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{F729535A-1422-451C-B163-88534D816B66}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{EE7536AA-EA6C-4A9C-A53C-C13837D93B37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{5B3594A9-2605-4067-A9A3-1EB90BF92ECA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{5B3594A9-2605-4067-A9A3-1EB90BF92ECA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{F5CBD6E5-3C46-47EE-9B7B-250B059AEBC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5B3594A9-2605-4067-A9A3-1EB90BF92ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B3594A9-2605-4067-A9A3-1EB90BF92ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B3594A9-2605-4067-A9A3-1EB90BF92ECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5CBD6E5-3C46-47EE-9B7B-250B059AEBC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5CBD6E5-3C46-47EE-9B7B-250B059AEBC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5CBD6E5-3C46-47EE-9B7B-250B059AEBC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5CBD6E5-3C46-47EE-9B7B-250B059AEBC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,18 +7,23 @@ namespace DataAccess
 {
   public static   class DbContext
     {
-        public static List<MedicalName> MedicalNames { get; }
-        public static List<MedicalCategory> MedicalCategorys { get; }
+        public static int Id { get; set; }
+        public static string Name { get; set; }
+        
+        public static DrugStore DrugStore { get; set; }
+        public static List<Drug> Drugs  { get; }
+        public static List<DrugStore> DrugStores { get; }
         static DbContext()
         {
-            MedicalNames = new List<MedicalName>();
-            MedicalCategorys = new List<MedicalCategory>();
-
+            Drugs = new List<Drug>();
+            DrugStores = new List<DrugStore>();
         }
 
-        
 
-        
+
+
+
+
     }
 
 }
