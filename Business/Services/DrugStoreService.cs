@@ -5,6 +5,7 @@ using DataAccess.Repositories;
 using Entities.Models;
 using System;
 using System.Collections.Generic;
+using Utilities.Exceptions;
 
 namespace Business.Services
 
@@ -32,15 +33,15 @@ namespace Business.Services
                 count++;
                 return drugstore;
             }
-            catch (Exception)
+            catch (DrugStoreException ex)
             {
-
-                return null;
+                Console.WriteLine("Type is not available",ex.Message);
+                
             }
             
         }
 
-        public DrugStore  Update(int Id, DrugStore drugstore)
+        public DrugStore Update(int Id, DrugStore drugstore)
         {
             try
             {
@@ -52,13 +53,13 @@ namespace Business.Services
                 }
                 else
                 {
-                    return null;
+                    throw new DrugStoreException("Type is not available");
                 }
             }
-            catch (Exception)
+            catch (DrugStoreException ex)
             {
 
-                return null;
+                Console.WriteLine("Type is not available",ex.Message);
             }
         }
 
@@ -77,9 +78,8 @@ namespace Business.Services
             throw new NotImplementedException();
         }
 
-        public DrugStore Create(Drug drug)
-        {
-            throw new NotImplementedException();
-        }
+        
+
+        
     }
 }

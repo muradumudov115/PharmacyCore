@@ -28,7 +28,7 @@ namespace Pharmacy
                             drugstoreController.Update();
                             break;
                         case (int)Helper.Menu.DeleteDrugStore:
-                            drugstoreController.Delete();
+                         //   drugstoreController.Delete();
                             break;
                         case (int)Helper.Menu.GetDrugStoreWithId:
                             break;
@@ -38,15 +38,15 @@ namespace Pharmacy
                            drugstoreController.GetAll();
                             break;
                         case (int)Helper.Menu.GetDrugStoresWithSize:
-                            drugstoreController.GetDrugStoresWithSize();
+                           // drugstoreController.GetDrugStoresWithSize();
                             break;
                         case (int)Helper.Menu.CreateDrug:
                             drugstoreController.GetAll();
                             drugController.Create();
                             break;
-                        case (int)Helper.Menu.GetAllDrugWithDrugStore:
-                            drugstoreController.GetAll();
-                            drugController.GetAllDrugWithDrugStore();
+                       // case (int)Helper.Menu.GetAllDrugWithDrugStore:
+                           // drugstoreController.GetAll();
+                            //drugController.GetAllDrugWithDrugStore();
                             break;
                     }
                 }
@@ -70,17 +70,7 @@ namespace Pharmacy
             Helper.ChangeTextColor(ConsoleColor.Yellow, "Select Option Number:");
         }
 
-
-
-
-
     }
-
-    }
-
-
-
-
 }
 
 

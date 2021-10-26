@@ -28,8 +28,8 @@ namespace DrugStoreApp.Controller
                     $"New Drug is Created - {newDrug.Name}");
                 return;
             }
-            Helper.ChangeTextColor(ConsoleColor.Red,
-                $"Couldn't find such as DrugStore - {drugstoreName}");
+            //Helper.ChangeTextColor(ConsoleColor.Red,
+            //    $"Couldn't find such as DrugStore - {drugstoreName}");
         }
         public void GetAllStudentWithDrugStore()
         {

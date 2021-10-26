@@ -4,7 +4,7 @@ using Entities.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
-
+using Utilities.Excceptions;
 
 namespace Business.Services
 {
@@ -21,10 +21,13 @@ namespace Business.Services
             }
             public Drug Create(Drug drug, string drugstoreName)
             {
+               
+            try
+            {
                 DrugStore dbDrugStore = drugstoreService.Get(drugstoreName);
                 if (dbDrugStore != null)
                 {
-                    drug.drugstore  = dbDrugStore;
+                    drug.drugstore = dbDrugStore;
                     drug.Id = count;
                     drugRepository.Create(drug);
                     count++;
@@ -32,21 +35,42 @@ namespace Business.Services
                 }
                 else
                 {
-                    return null;
+                    throw new DrugException("Type is not available");
                 }
+
+            }
+            catch (DrugException ex)
+            {
+
+                Console.WriteLine("Type is not available",ex.Message);
+                return default;
+            }
+                
             }
             public List<Drug> GetAll(string drugstoreName)
             {
-            DrugStore dbDrugStore = drugstoreService.Get(drugstoreName);
+            try
+               
+            {
+                DrugStore dbDrugStore = drugstoreService.Get(drugstoreName);
                 if (dbDrugStore != null)
                 {
-                    return drugRepository.GetAll(s => s.drugstore .Name == dbDrugStore.Name);
+                    return drugRepository.GetAll(s => s.drugstore.Name == dbDrugStore.Name);
                 }
                 else
                 {
-                    return null;
+                    throw new DrugException("Type is not available");
                 }
             }
+            catch (DrugException ex)
+            {
+
+                Console.WriteLine("Type is not available",ex.Message);
+                return default;
+            }
+            
+                
+        }
 
             public Drug  Delete(int id)
             {
